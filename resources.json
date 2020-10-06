@@ -1,0 +1,82 @@
+{
+    "resources": [
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "controller/Painel.controller.js"
+        },
+        {
+            "name": "serviceBinding.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "controller/Painel-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "serviceBinding-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "view/Painel.view.html"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "css/fontes.css"
+        },
+        {
+            "name": "css/Rubik.ttf"
+        },
+        {
+            "name": "css/Rubic.woff"
+        },
+        {
+            "name": "css/Anton.woff2"
+        },
+        {
+            "name": "css/Anton.ttf"
+        },
+        {
+            "name": "index.html"
+        }
+    ]
+}

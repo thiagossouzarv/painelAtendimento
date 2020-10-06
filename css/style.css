@@ -1,0 +1,525 @@
+	@font-face {
+	  font-family: 'Anton';
+	  src: url('Anton.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	   url('Anton.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+	}  
+
+	.sapUiBody {
+		overflow-y: hidden;
+	}
+
+	html.sap-desktop .sapMShellAppWidthLimited .sapMShellCentralBox {
+		width: 100%;
+		margin-left: 0;
+		left: 0;
+	}
+	
+	.sapMShellBrandingBar {display: none;
+	}
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    #painel {
+    	background: white;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        overflow: hidden;
+        font-size: 1.5vh;
+    }
+
+    #corpo {
+        display: flex;
+        height: calc(100vh - 2rem);/*calc(100vh - 10rem - 2rem);*/
+        background-color: #acb0b9;
+    }
+
+    #corpo > :first-child {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rodape {
+        position: relative;
+        display: flex;
+        height: 11.5em;
+        /*height: 10rem;*/
+        background-color: #064c4d;
+        color: white;
+    }
+    
+    #quadroInfoRodape {
+    	padding-right: 7px;
+    	background-color: white;
+    	display: flex;
+    }
+    
+    #quadroInfoRodape > div {
+    	display: flex;
+    }
+
+    /* Titulo */
+
+    #titulo {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+        border-bottom: 3px solid white;
+    }
+
+    #titulo .logo {
+        padding: 0 2rem;
+    }
+
+    #titulo img {
+    	width: 20em;
+    	margin-top: 0.3em;
+        /*width: 300px;*/
+    }
+
+    #titulo .label {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.8);
+    }
+
+    /* Box Chamada */
+
+    #boxChamada {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #boxChamada .card {
+        display: flex;
+        flex-direction: column;
+        height: 10em;
+        background-color: white;
+        font-size: 3.5em;
+        line-height: 110%;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    #boxChamada .card .header {
+        padding: 1rem 2rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: #064c4d;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #boxChamada .card .body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        padding: 2rem 6rem;
+        text-transform: uppercase;
+    }
+
+    #boxChamada .card .label {
+        margin-top: auto;
+        text-align: center;
+        color: #064c4d;
+        font-family: Anton;
+        letter-spacing: 10px;
+    }
+
+    #boxChamada .card.guiche .label {
+        margin-top: auto;
+    }
+
+    #boxChamada .card .detalhe {
+        display: flex;
+        margin-top: auto;
+        font-size: 0.3em;
+        line-height: 110%;
+        width: 100%;
+    }
+
+    #boxChamada .card .detalhe .placa {
+        margin-right: auto;
+        color: #52b955;
+    }
+
+    #boxChamada .card .detalhe .bitrem {
+        color: #fa8638;
+    }
+    
+    #boxChamada .card.guiche .detalhe {
+    	color: white;
+    }
+    
+    #lblData {
+    	display: none;
+    }
+
+    /* Lista Chamadas */
+
+    #listaChamadas {
+        border-left: 3px solid white;
+        padding: 2em;
+        font-weight: bold;
+        overflow: hidden;
+    }
+
+    #listaChamadas > .header {
+        display: flex;
+        margin-bottom: 0.3em;
+        color: white;
+        line-height: 120%;
+        font-size: 2em;
+    }
+
+    #listaChamadas > .header > div {
+        padding: 0.3rem 1rem;
+        background-color: #064c4d;
+        border-radius: 5px;
+    }
+
+    #listaChamadas .listagem .item {
+    	height: calc((100% - 2em)/ 12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.8em;
+        letter-spacing: 3px;
+    }
+
+    #listaChamadas .listagem .item > div {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+        background-color: white;
+        border-radius: 5px;
+        padding: 0em 0.5rem;
+        color: #064c4d;
+        font-family: Anton !important;
+    }
+
+    #listaChamadas > .header > div,
+    #listaChamadas .listagem .item > div {
+    	/*height: 94%;*/
+    }
+
+    #listaChamadas .listagem .item.aguardando > div:first-child {
+        color: red;
+    }
+
+    #listaChamadas > .header > div:first-child,
+    #listaChamadas .listagem .item > div:first-child {
+        width: 6em;
+        margin-right: 0.5rem;
+        text-align: center;
+    }
+    
+     #listaChamadas > .header > div:first-child {
+     	width: 8.4em;
+     }
+
+    #listaChamadas > .header > div:last-child,
+    #listaChamadas .listagem .item > div:last-child {
+        width: 3.5em;
+        text-align: center;
+    }
+    
+    #listaChamadas > .header > div:last-child {
+    	width: 4.9em;
+    }
+
+    /* Box Dia Hora */
+
+    #infoDiaHora {
+    	/*min-width: 385px;*/
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #669a48;
+        /*padding: 0 2rem;*/
+        padding: 0 15px;
+        font-size: 2em;
+        line-height: 110%;
+    }
+
+    #infoDiaHora .lblDia {
+    }
+
+    #infoDiaHora .lblHora {
+        font-size: 3em;
+        line-height: 100%;
+    }
+
+    /* Box Mensagem */
+
+    #boxMensagem {
+    	flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+
+    /* Box Clima */
+
+    #infoClima {
+    	/*min-width: 385px;*/
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*padding: 0 2rem;*/
+        padding: 0 15px;
+        background-color: #545454;
+        font-size: 1.5em;
+    }
+
+    #infoClima .header {
+        border-bottom: 2px solid white;
+        padding-bottom: 0.5rem;
+        margin-bottom: 6px;
+        /*margin-bottom: 1rem;*/
+    }
+
+    #infoClima > .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #infoClima > .content > * {
+        padding: 0 0.6rem;
+    }
+
+    #iconeClima > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5rem;
+        border: none !important;
+        line-height: 100%;
+        font-size: 4em !important;
+        cursor: default !important;
+        color: white !important;
+    }
+
+    #infoClima > .content .label {
+        font-size: 0.8em;
+        padding-bottom: 0.1em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #infoClima > .content .valor {
+        font-size: 2.5em;
+        line-height: 100%;
+    }
+    
+    /* WebKit and Opera browsers */
+	@-webkit-keyframes spin {
+	    0%   {-webkit-transform: rotateX(0deg);}
+	    50%   {-webkit-transform: rotateX(180deg);}
+	    100% {-webkit-transform: rotateX(0deg);}
+	}
+	
+	/* all other browsers */
+	@keyframes spin {
+	    0% {
+	    	-moz-transform: rotateX(0deg);
+    		-ms-transform: rotateX(0deg);
+    		transform: rotateX(0deg);
+	    }
+	    50% {
+	    	-moz-transform: rotateX(180deg);
+    		-ms-transform: rotateX(180deg);
+    		transform: rotateX(180deg);
+	    }
+	    100% {
+	    	-moz-transform: rotateX(0deg);
+    		-ms-transform: rotateX(0deg);
+    		transform: rotateX(0deg);
+	    }
+	}
+	
+	#listaChamadas .item.spin {
+		-webkit-animation: spin 0.5s; /* Chrome, Safari, Opera */ 
+	    animation: spin 0.5s;
+	    animation-fill-mode: forwards;
+	}
+    
+    /* WebKit and Opera browsers */
+	@-webkit-keyframes spinslow {
+	    0%   {-webkit-transform: rotateX(0deg);}
+	    100% {-webkit-transform: rotateX(360deg);}
+	}
+	
+	/* all other browsers */
+	@keyframes spinslow {
+	    0% {
+	    	-moz-transform: rotateX(0deg);
+    		-ms-transform: rotateX(0deg);
+    		transform: rotateX(0deg);
+	    }
+	    100% {
+	    	-moz-transform: rotateX(360deg);
+    		-ms-transform: rotateX(360deg);
+    		transform: rotateX(360deg);
+	    }
+	}
+	
+	#quadroInfoRodape > div.spin {
+		-webkit-animation: spinslow 2s; /* Chrome, Safari, Opera */ 
+	    animation: spinslow 2s;
+	    animation-fill-mode: forwards;
+	}
+	
+	.step1 {
+		opacity: 0.9 !important;
+		top: 0.1em;
+		right: 0.1em;
+	}
+	
+	.step2 {
+		opacity: 0.5 !important;
+		top: 0.15em;
+		right: 0.15em;
+	}
+	
+	.step3 {
+		opacity: 0.9 !important;
+		top: 0.2em;
+		right: 0.2em;
+	}
+	
+	.step4 {
+		opacity: 1 !important;
+		top: 0em; 
+		right: 0em;
+	}
+	
+	  /* WebKit and Opera browsers */
+	@-webkit-keyframes zoomin {
+	    50%   {-webkit-transform: scale(0.6,0.6);}
+	    100% {-webkit-transform: scale(1,1);}
+	}
+	
+	/* all other browsers */
+	@keyframes zoomin {
+	    50% {
+	    	-moz-transform: scale(0.6,0.6);
+    		-ms-transform: scale(0.6,0.6);
+    		transform: scale(0.6,0.6);
+	    }
+	    100% {
+	    	-moz-transform: scale(1,1);
+    		-ms-transform: scale(1,1);
+    		transform: scale(1,1);
+	    }
+	}
+	
+	#cardSenha.animate,
+	#cardGuiche.animate {
+		-webkit-animation: zoomin 1s; /* Chrome, Safari, Opera */ 
+	    animation: zoomin 1s;
+	    animation-fill-mode: forwards;
+	}
+	
+	/* Menu */
+	
+	#menu {
+		z-index: 9;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+	}
+	
+	#menu > .container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		width: 100%;
+		border-top: 10vh solid rgb(29,142,125);
+		border-bottom: 5vh solid rgb(29,142,125);
+		background-color: #ddd;
+		background: linear-gradient(190deg, #bdbdbd 25%, #ccc 50%, #ddd 100%);
+	}
+	
+	#menu > .container > .form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: #10827c;
+		background: linear-gradient(190deg, rgba(29,142,125,1) 30%, rgba(125,193,95,0.8407738095238095) 100%);
+		box-shadow: 0 0 3px 0.5px rgba(0,0,0,0.4);
+		padding: 3rem 10rem;
+		border-radius: 4px;
+		color: white;
+	}
+	
+	#menu h1 {
+		font-size: 4rem;
+		margin: 0.2rem 0;
+	}
+	
+	#menu h2 {
+		font-size: 2rem;
+		margin: 0.1rem 0;
+	}
+	
+	#btnAbrirPainel {
+		margin: 3rem 0;
+		margin-bottom: 1.5rem;
+		padding: 10px 20px;
+		border: 2px solid white;
+		border-radius: 4px;
+		cursor: pointer;
+		color: white;
+		font-weight: bold;
+		font-size: 1rem;
+	}
+	
+	#btnAbrirPainel:hover {
+		background-color: white;
+		color: #10827c;
+	}
+	
+	
+	
+	
+	/* Responsividade */
+	
+	@media (max-width: 1650px) {
+		#boxChamada .card {
+			height: 8em;
+		}
+		
+		#boxChamada .card .body {
+			padding: 1rem 1.5rem;
+			font-size: 2.5em;
+		}
+	}

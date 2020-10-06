@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5","comigo/com/br/PainelDeSenhas/test/integration/pages/Common","sap/ui/test/opaQunit","comigo/com/br/PainelDeSenhas/test/integration/pages/Painel","comigo/com/br/PainelDeSenhas/test/integration/navigationJourney"],function(e,i){"use strict";e.extendConfig({arrangements:new i,viewNamespace:"comigo.com.br.PainelDeSenhas.view.",autoWait:true})});
